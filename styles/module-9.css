@@ -1,0 +1,9 @@
+/* Spectral Cortex — module 9 */
+:root { --brand:#2dd4a8; --bg:#0a0f1a; --fg:#e6f7f1; --radius:14px; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--fg); }
+.app { max-width:1200px; margin:0 auto; padding:2rem; }
+.card { background:rgba(255,255,255,.04); border:1px solid rgba(45,212,168,.2);
+  border-radius:var(--radius); padding:1.25rem; backdrop-filter: blur(14px); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
+@media (max-width:640px){ .app{padding:1rem} }
